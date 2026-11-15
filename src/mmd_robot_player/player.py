@@ -103,8 +103,13 @@ def bind_targets(model, mapping, profile):
     * ``align``: the G1 zero pose and the PMX rest pose point the same limb in
       different directions (the PMX rests in an A-pose, the G1 hangs its arms down).
       Copying VMD deltas straight onto the G1 makes every limb rotate from a different
-      neutral, so the arms end up ~45 deg too low and fold across the body. This
+      neutral, so the arms end up ~50 deg too low and fold across the body. This
       constant rotates the G1 rest segment onto the PMX rest segment.
+
+    The alignment is measured on the pose that the bindings themselves produce for an
+    all-identity delta, not on ``qpos0``: once a joint's rest rotation is divided out the
+    limb no longer sits where the unmodified model puts it, and a segment such as the
+    humerus (``g1_start`` -> ``g1_child``) may not start at the driven joint at all.
     """
     import mujoco
     bones = {entry["name"]: entry for entry in mapping["bones"]}
@@ -116,22 +121,10 @@ def bind_targets(model, mapping, profile):
     for names in drivers.values():
         names.sort(key=lambda bone: order[bone])
 
-    rest_data = mujoco.MjData(model)
-    rest_data.qpos[:] = model.qpos0
-    mujoco.mj_kinematics(model, rest_data)
-
-    def body_position(name):
-        bid = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_BODY, name)
-        return None if bid < 0 else rest_data.xpos[bid].copy()
-
-    def source_position(bone):
-        entry = bones.get(bone)
-        return None if entry is None else body_position(f"pmx_body_{entry['index']:03d}")
-
     def unit(value):
         return value / np.linalg.norm(value)
 
-    bindings = []
+    records = []
     for target, names in sorted(drivers.items()):
         jid = mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_JOINT, target)
         if jid < 0:
@@ -139,16 +132,36 @@ def bind_targets(model, mapping, profile):
             continue
         body = int(model.jnt_bodyid[jid])
         rest = np.array(model.body_quat[body], dtype=float)
+        records.append([int(model.jnt_qposadr[jid]), tuple(names),
+                        _quat_conjugate(rest / np.linalg.norm(rest)), body,
+                        profile.get("segment_align", {}).get(target)])
+
+    # Probe the pose produced by the bindings alone (every PMX delta = identity).
+    probe = mujoco.MjData(model)
+    probe.qpos[:] = model.qpos0
+    for address, _, rest_inverse, _, _ in records:
+        probe.qpos[address:address+4] = rest_inverse
+    mujoco.mj_kinematics(model, probe)
+
+    def body_id(name):
+        return mujoco.mj_name2id(model, mujoco.mjtObj.mjOBJ_BODY, name)
+
+    def source_position(bone):
+        entry = bones.get(bone)
+        return None if entry is None else probe.xpos[body_id(f"pmx_body_{entry['index']:03d}")]
+
+    bindings = []
+    for address, names, rest_inverse, body, spec in records:
         align = np.array([1.0, 0.0, 0.0, 0.0])
-        spec = profile.get("segment_align", {}).get(target)
         if spec:
-            start = source_position(spec["pmx"][0])
-            end = source_position(spec["pmx"][1])
-            limb = body_position(spec["g1_child"])
-            if start is not None and end is not None and limb is not None:
-                align = _rotation_between(unit(limb - rest_data.xpos[body]), unit(end - start))
-        bindings.append((int(model.jnt_qposadr[jid]), tuple(names),
-                         _quat_conjugate(rest / np.linalg.norm(rest)), align))
+            start_bone, end_bone = spec["pmx"]
+            start_pmx, end_pmx = source_position(start_bone), source_position(end_bone)
+            limb_start = body_id(spec.get("g1_start", "")) if spec.get("g1_start") else body
+            limb_end = body_id(spec["g1_child"])
+            if start_pmx is not None and end_pmx is not None and limb_start >= 0 and limb_end >= 0:
+                align = _rotation_between(unit(probe.xpos[limb_end] - probe.xpos[limb_start]),
+                                          unit(end_pmx - start_pmx))
+        bindings.append((address, names, rest_inverse, align))
     return bindings
 
 

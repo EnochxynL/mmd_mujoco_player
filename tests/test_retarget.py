@@ -21,6 +21,19 @@ def unit(vector):
     return vector / np.linalg.norm(vector)
 
 
+def quaternion_relative(base, other):
+    """Rotation from ``base`` to ``other`` (wxyz)."""
+    w1, x1, y1, z1 = base
+    w2, x2, y2, z2 = other
+    inverse = np.array([w1, -x1, -y1, -z1])
+    return np.array([
+        inverse[0]*w2 - inverse[1]*x2 - inverse[2]*y2 - inverse[3]*z2,
+        inverse[0]*x2 + inverse[1]*w2 + inverse[2]*z2 - inverse[3]*y2,
+        inverse[0]*y2 - inverse[1]*z2 + inverse[2]*w2 + inverse[3]*x2,
+        inverse[0]*z2 + inverse[1]*y2 - inverse[2]*x2 + inverse[3]*w2,
+    ])
+
+
 class RetargetRegression(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -86,6 +99,23 @@ class RetargetRegression(unittest.TestCase):
                 robot = unit(self.g1(f'{prefix}_elbow_link') - self.g1(f'{prefix}_shoulder_yaw_link'))
                 error = np.degrees(np.arccos(np.clip(float(np.dot(source, robot)), -1, 1)))
                 self.assertLess(error, 3.0, f"frame {frame} {side} upper arm off by {error:.1f} deg")
+
+    def test_humerus_stays_rigid(self):
+        """The G1 humerus spans shoulder_pitch/roll/yaw links; any relative rotation
+        between them tears the upper-arm mesh apart, which is what drove 腕 onto the
+        last link of the chain and broke the arm."""
+        rest = mujoco.MjData(self.model)
+        rest.qpos[:] = self.model.qpos0
+        mujoco.mj_kinematics(self.model, rest)
+        self.pose(0)
+        for prefix in ('left', 'right'):
+            base = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, f'{prefix}_shoulder_pitch_link')
+            for child in (f'{prefix}_shoulder_roll_link', f'{prefix}_shoulder_yaw_link'):
+                other = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, child)
+                expected = quaternion_relative(rest.xquat[base], rest.xquat[other])
+                actual = quaternion_relative(self.data.xquat[base], self.data.xquat[other])
+                angle = 2 * np.degrees(np.arccos(min(1.0, abs(float(np.dot(expected, actual))))))
+                self.assertLess(angle, 0.5, f"{child} rotates {angle:.1f} deg against the humerus")
 
     def test_root_yaw_follows_centre_bone(self):
         # センター carries most of the body turn; at frame 240 it is ~72 deg.
