@@ -3,7 +3,7 @@
   "scale": 0.07,
   "joint_count": 122,
   "hinge_count_converted_to_ball": 29,
-  "coordinate_mapping": "MMD [x,y,z] -> MuJoCo [z,x,y] * scale",
+  "coordinate_mapping": "MMD [x,y,z] -> MuJoCo [-z,x,y] * scale (left-handed to right-handed)",
   "bones": [
     {
       "name": "センター",

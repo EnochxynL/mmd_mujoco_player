@@ -254,58 +254,58 @@
     <body name="mmd_source_root">
       <freejoint name="mmd_source_root_free" />
       <inertial pos="0 0 0" mass="0.001" diaginertia="1e-9 1e-9 1e-9" />
-      <body name="pmx_body_000" pos="0.0453652573 6.75395131e-08 0.0131983443">
+      <body name="pmx_body_000" pos="-0.0453652573 6.75395131e-08 0.0131983443">
         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
         <joint name="pmx_joint_000" type="ball" />
-        <body name="pmx_body_003" pos="-0.0453652573 -6.75395131e-08 0.555249112">
+        <body name="pmx_body_003" pos="+0.0453652573 -6.75395131e-08 0.555249112">
           <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
           <joint name="pmx_joint_003" type="ball" />
-          <body name="pmx_body_004" pos="0.0568155026 0 0.0415500832">
+          <body name="pmx_body_004" pos="-0.0568155026 0 0.0415500832">
             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
             <joint name="pmx_joint_004" type="ball" />
-            <body name="pmx_body_011" pos="-0.0415533876 0 0.0616482735">
+            <body name="pmx_body_011" pos="+0.0415533876 0 0.0616482735">
               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
               <joint name="pmx_joint_011" type="ball" />
-              <body name="pmx_body_012" pos="0.00396147877 0 0.0851770496">
+              <body name="pmx_body_012" pos="-0.00396147877 0 0.0851770496">
                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                 <joint name="pmx_joint_012" type="ball" />
-                <body name="pmx_body_014" pos="0.0221019974 0 0.194288492">
+                <body name="pmx_body_014" pos="-0.0221019974 0 0.194288492">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_014" type="ball" />
-                  <body name="pmx_body_015" pos="-0.00365702212 0 0.0561270523">
+                  <body name="pmx_body_015" pos="+0.00365702212 0 0.0561270523">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_015" type="ball" />
-                    <body name="pmx_body_094" pos="-0.0276487887 -0.0205414519 0.0521646118">
+                    <body name="pmx_body_094" pos="+0.0276487887 -0.0205414519 0.0521646118">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_094" type="ball" />
-                      <body name="pmx_body_095" pos="-0.0344940847 -0.00900908053 -0.00173034668">
+                      <body name="pmx_body_095" pos="+0.0344940847 -0.00900908053 -0.00173034668">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_095" type="ball" />
                       </body>
                     </body>
-                    <body name="pmx_body_096" pos="-0.0276487887 0.0205414519 0.0521646118">
+                    <body name="pmx_body_096" pos="+0.0276487887 0.0205414519 0.0521646118">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_096" type="ball" />
-                      <body name="pmx_body_097" pos="-0.0344940847 0.00900908053 -0.00173034668">
+                      <body name="pmx_body_097" pos="+0.0344940847 0.00900908053 -0.00173034668">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_097" type="ball" />
                       </body>
                     </body>
-                    <body name="pmx_body_098" pos="-0.0449890137 0 0.248810635">
+                    <body name="pmx_body_098" pos="+0.0449890137 0 0.248810635">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_098" type="ball" />
                     </body>
-                    <body name="pmx_body_118" pos="-0.00741515011 0 0.0468376541">
+                    <body name="pmx_body_118" pos="+0.00741515011 0 0.0468376541">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_118" type="ball" />
                     </body>
-                    <body name="pmx_body_119" pos="-0.0595528609 0 -0.00145784378">
+                    <body name="pmx_body_119" pos="+0.0595528609 0 -0.00145784378">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_119" type="ball" />
-                      <body name="pmx_body_120" pos="-0.00148869395 0 -0.000204811096">
+                      <body name="pmx_body_120" pos="+0.00148869395 0 -0.000204811096">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_120" type="ball" />
-                        <body name="pmx_body_121" pos="-0.00158293426 0 -0.00034620285">
+                        <body name="pmx_body_121" pos="+0.00158293426 0 -0.00034620285">
                           <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                           <joint name="pmx_joint_121" type="ball" />
                         </body>
@@ -313,124 +313,124 @@
                     </body>
                   </body>
                 </body>
-                <body name="pmx_body_016" pos="-0.00619759887 0.0498867226 0.202502232">
+                <body name="pmx_body_016" pos="+0.00619759887 0.0498867226 0.202502232">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_016" type="ball" />
-                  <body name="pmx_body_017" pos="4.17232513e-09 4.17232514e-09 0">
+                  <body name="pmx_body_017" pos="-4.17232513e-09 4.17232514e-09 0">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_017" type="ball" />
-                    <body name="pmx_body_018" pos="0.00833450735 0.0766482872 -0.0281684685">
+                    <body name="pmx_body_018" pos="-0.00833450735 0.0766482872 -0.0281684685">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_018" type="ball" />
-                      <body name="pmx_body_019" pos="0 2.50339508e-08 -2.67028809e-07">
+                      <body name="pmx_body_019" pos="-0 2.50339508e-08 -2.67028809e-07">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_019" type="ball" />
-                        <body name="pmx_body_022" pos="-0.00339978158 0.0469442821 -0.040396986">
+                        <body name="pmx_body_022" pos="+0.00339978158 0.0469442821 -0.040396986">
                           <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                           <joint name="pmx_joint_022" type="ball" />
-                          <body name="pmx_body_023" pos="-0.00842210948 0.0722956467 -0.0603810215">
+                          <body name="pmx_body_023" pos="+0.00842210948 0.0722956467 -0.0603810215">
                             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                             <joint name="pmx_joint_023" type="ball" />
-                            <body name="pmx_body_024" pos="0 0 0">
+                            <body name="pmx_body_024" pos="-0 0 0">
                               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                               <joint name="pmx_joint_024" type="ball" />
                             </body>
-                            <body name="pmx_body_027" pos="0.00405085623 0.0813780141 -0.0509455585">
+                            <body name="pmx_body_027" pos="-0.00405085623 0.0813780141 -0.0509455585">
                               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                               <joint name="pmx_joint_027" type="ball" />
-                              <body name="pmx_body_028" pos="-0.0033676964 0.0534361362 -0.0465283012">
+                              <body name="pmx_body_028" pos="+0.0033676964 0.0534361362 -0.0465283012">
                                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                 <joint name="pmx_joint_028" type="ball" />
-                                <body name="pmx_body_029" pos="0 0 0">
+                                <body name="pmx_body_029" pos="-0 0 0">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_029" type="ball" />
                                 </body>
-                                <body name="pmx_body_032" pos="-0.0025833869 0.042028532 -0.0255808258">
+                                <body name="pmx_body_032" pos="+0.0025833869 0.042028532 -0.0255808258">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_032" type="ball" />
-                                  <body name="pmx_body_033" pos="0 0 0">
+                                  <body name="pmx_body_033" pos="-0 0 0">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_033" type="ball" />
                                   </body>
                                 </body>
-                                <body name="pmx_body_034" pos="-1.04308128e-07 0.034601059 -0.0308701992">
+                                <body name="pmx_body_034" pos="+1.04308128e-07 0.034601059 -0.0308701992">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_034" type="ball" />
                                 </body>
-                                <body name="pmx_body_035" pos="-0.0234552827 0.0226975489 -0.0116725636">
+                                <body name="pmx_body_035" pos="+0.0234552827 0.0226975489 -0.0116725636">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_035" type="ball" />
-                                  <body name="pmx_body_036" pos="-0.0163349909 0.0183601332 -0.0272117043">
+                                  <body name="pmx_body_036" pos="+0.0163349909 0.0183601332 -0.0272117043">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_036" type="ball" />
-                                    <body name="pmx_body_037" pos="-0.00491490513 0.016225605 -0.0175154877">
+                                    <body name="pmx_body_037" pos="+0.00491490513 0.016225605 -0.0175154877">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_037" type="ball" />
-                                      <body name="pmx_body_038" pos="-0.00691222429 0.0161694288 -0.0143518639">
+                                      <body name="pmx_body_038" pos="+0.00691222429 0.0161694288 -0.0143518639">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_038" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_039" pos="0.031595099 0.0672138882 -0.0312053871">
+                                <body name="pmx_body_039" pos="-0.031595099 0.0672138882 -0.0312053871">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_039" type="ball" />
-                                  <body name="pmx_body_040" pos="0.00149729729 0.0220041418 -0.0151435375">
+                                  <body name="pmx_body_040" pos="-0.00149729729 0.0220041418 -0.0151435375">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_040" type="ball" />
-                                    <body name="pmx_body_041" pos="0.000296452045 0.0136309195 -0.0103804779">
+                                    <body name="pmx_body_041" pos="-0.000296452045 0.0136309195 -0.0103804779">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_041" type="ball" />
-                                      <body name="pmx_body_042" pos="0.000646026134 0.0122405005 -0.00745103836">
+                                      <body name="pmx_body_042" pos="-0.000646026134 0.0122405005 -0.00745103836">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_042" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_043" pos="0.0149764776 0.0722108984 -0.0324038792">
+                                <body name="pmx_body_043" pos="-0.0149764776 0.0722108984 -0.0324038792">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_043" type="ball" />
-                                  <body name="pmx_body_044" pos="0.000160843134 0.0295374584 -0.0173670197">
+                                  <body name="pmx_body_044" pos="-0.000160843134 0.0295374584 -0.0173670197">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_044" type="ball" />
-                                    <body name="pmx_body_045" pos="-0.000185005069 0.0172322369 -0.0117283726">
+                                    <body name="pmx_body_045" pos="+0.000185005069 0.0172322369 -0.0117283726">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_045" type="ball" />
-                                      <body name="pmx_body_046" pos="0.000102551579 0.0162489033 -0.00969875336">
+                                      <body name="pmx_body_046" pos="-0.000102551579 0.0162489033 -0.00969875336">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_046" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_047" pos="-0.00396511495 0.0740427494 -0.0310985088">
+                                <body name="pmx_body_047" pos="+0.00396511495 0.0740427494 -0.0310985088">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_047" type="ball" />
-                                  <body name="pmx_body_048" pos="-0.000164708793 0.0336335802 -0.0209474754">
+                                  <body name="pmx_body_048" pos="+0.000164708793 0.0336335802 -0.0209474754">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_048" type="ball" />
-                                    <body name="pmx_body_049" pos="-0.000400401354 0.0161735344 -0.010956192">
+                                    <body name="pmx_body_049" pos="+0.000400401354 0.0161735344 -0.010956192">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_049" type="ball" />
-                                      <body name="pmx_body_050" pos="-0.000955919325 0.0173049355 -0.010223732">
+                                      <body name="pmx_body_050" pos="+0.000955919325 0.0173049355 -0.010223732">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_050" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_051" pos="-0.0227912635 0.0722568941 -0.0323031425">
+                                <body name="pmx_body_051" pos="+0.0227912635 0.0722568941 -0.0323031425">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_051" type="ball" />
-                                  <body name="pmx_body_052" pos="-0.00226128131 0.0269000816 -0.0154690456">
+                                  <body name="pmx_body_052" pos="+0.00226128131 0.0269000816 -0.0154690456">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_052" type="ball" />
-                                    <body name="pmx_body_053" pos="-0.00131228805 0.0166710091 -0.0104330826">
+                                    <body name="pmx_body_053" pos="+0.00131228805 0.0166710091 -0.0104330826">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_053" type="ball" />
-                                      <body name="pmx_body_054" pos="-0.00139216304 0.0178787804 -0.0107798195">
+                                      <body name="pmx_body_054" pos="+0.00139216304 0.0178787804 -0.0107798195">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_054" type="ball" />
                                       </body>
@@ -438,20 +438,20 @@
                                   </body>
                                 </body>
                               </body>
-                              <body name="pmx_body_030" pos="-0.00336780071 0.0511390543 -0.0374444485">
+                              <body name="pmx_body_030" pos="+0.00336780071 0.0511390543 -0.0374444485">
                                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                 <joint name="pmx_joint_030" type="ball" />
-                                <body name="pmx_body_031" pos="-0.00258328259 0.044325614 -0.0346646786">
+                                <body name="pmx_body_031" pos="+0.00258328259 0.044325614 -0.0346646786">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_031" type="ball" />
                                 </body>
                               </body>
                             </body>
                           </body>
-                          <body name="pmx_body_025" pos="-0.00842210948 0.0722956467 -0.0603810215">
+                          <body name="pmx_body_025" pos="+0.00842210948 0.0722956467 -0.0603810215">
                             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                             <joint name="pmx_joint_025" type="ball" />
-                            <body name="pmx_body_026" pos="0.00753971696 0.0598345304 -0.0388663769">
+                            <body name="pmx_body_026" pos="-0.00753971696 0.0598345304 -0.0388663769">
                               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                               <joint name="pmx_joint_026" type="ball" />
                             </body>
@@ -459,134 +459,134 @@
                         </body>
                       </body>
                     </body>
-                    <body name="pmx_body_020" pos="0.00833450735 0.0766483122 -0.0281687355">
+                    <body name="pmx_body_020" pos="-0.00833450735 0.0766483122 -0.0281687355">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_020" type="ball" />
-                      <body name="pmx_body_021" pos="0.000150687695 0.0178540969 -0.010724678">
+                      <body name="pmx_body_021" pos="-0.000150687695 0.0178540969 -0.010724678">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_021" type="ball" />
                       </body>
                     </body>
                   </body>
                 </body>
-                <body name="pmx_body_055" pos="-0.0061975947 -0.0498867267 0.202502232">
+                <body name="pmx_body_055" pos="+0.0061975947 -0.0498867267 0.202502232">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_055" type="ball" />
-                  <body name="pmx_body_056" pos="0 0 0">
+                  <body name="pmx_body_056" pos="-0 0 0">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_056" type="ball" />
-                    <body name="pmx_body_057" pos="0.00833450735 -0.0736591917 -0.0281684685">
+                    <body name="pmx_body_057" pos="-0.00833450735 -0.0736591917 -0.0281684685">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_057" type="ball" />
-                      <body name="pmx_body_058" pos="0 -2.50339508e-08 -2.67028809e-07">
+                      <body name="pmx_body_058" pos="-0 -2.50339508e-08 -2.67028809e-07">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_058" type="ball" />
-                        <body name="pmx_body_061" pos="-0.00339978158 -0.0499333775 -0.040396986">
+                        <body name="pmx_body_061" pos="+0.00339978158 -0.0499333775 -0.040396986">
                           <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                           <joint name="pmx_joint_061" type="ball" />
-                          <body name="pmx_body_062" pos="-0.00842210948 -0.0722956467 -0.0603810215">
+                          <body name="pmx_body_062" pos="+0.00842210948 -0.0722956467 -0.0603810215">
                             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                             <joint name="pmx_joint_062" type="ball" />
-                            <body name="pmx_body_063" pos="0 0 0">
+                            <body name="pmx_body_063" pos="-0 0 0">
                               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                               <joint name="pmx_joint_063" type="ball" />
                             </body>
-                            <body name="pmx_body_066" pos="0.00405085623 -0.0813780141 -0.0509455585">
+                            <body name="pmx_body_066" pos="-0.00405085623 -0.0813780141 -0.0509455585">
                               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                               <joint name="pmx_joint_066" type="ball" />
-                              <body name="pmx_body_067" pos="-0.0033674711 -0.0557009077 -0.0406407166">
+                              <body name="pmx_body_067" pos="+0.0033674711 -0.0557009077 -0.0406407166">
                                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                 <joint name="pmx_joint_067" type="ball" />
-                                <body name="pmx_body_068" pos="0 0 0">
+                                <body name="pmx_body_068" pos="-0 0 0">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_068" type="ball" />
                                 </body>
-                                <body name="pmx_body_071" pos="-0.0025836122 -0.0397637606 -0.0314684105">
+                                <body name="pmx_body_071" pos="+0.0025836122 -0.0397637606 -0.0314684105">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_071" type="ball" />
-                                  <body name="pmx_body_072" pos="0 0 0">
+                                  <body name="pmx_body_072" pos="-0 0 0">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_072" type="ball" />
                                   </body>
                                 </body>
-                                <body name="pmx_body_073" pos="-3.29613686e-07 -0.0323362875 -0.0367577839">
+                                <body name="pmx_body_073" pos="+3.29613686e-07 -0.0323362875 -0.0367577839">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_073" type="ball" />
                                 </body>
-                                <body name="pmx_body_074" pos="-0.0234555081 -0.0204327774 -0.0175601482">
+                                <body name="pmx_body_074" pos="+0.0234555081 -0.0204327774 -0.0175601482">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_074" type="ball" />
-                                  <body name="pmx_body_075" pos="-0.0163349909 -0.0183601332 -0.0272117043">
+                                  <body name="pmx_body_075" pos="+0.0163349909 -0.0183601332 -0.0272117043">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_075" type="ball" />
-                                    <body name="pmx_body_076" pos="-0.00491490513 -0.016225605 -0.0175154877">
+                                    <body name="pmx_body_076" pos="+0.00491490513 -0.016225605 -0.0175154877">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_076" type="ball" />
-                                      <body name="pmx_body_077" pos="-0.00691222429 -0.0161694288 -0.0143518639">
+                                      <body name="pmx_body_077" pos="+0.00691222429 -0.0161694288 -0.0143518639">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_077" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_078" pos="0.0315948737 -0.0649491167 -0.0370929718">
+                                <body name="pmx_body_078" pos="-0.0315948737 -0.0649491167 -0.0370929718">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_078" type="ball" />
-                                  <body name="pmx_body_079" pos="0.00149729729 -0.0220041418 -0.0151435375">
+                                  <body name="pmx_body_079" pos="-0.00149729729 -0.0220041418 -0.0151435375">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_079" type="ball" />
-                                    <body name="pmx_body_080" pos="0.000296452045 -0.0136309195 -0.0103804779">
+                                    <body name="pmx_body_080" pos="-0.000296452045 -0.0136309195 -0.0103804779">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_080" type="ball" />
-                                      <body name="pmx_body_081" pos="0.000646026134 -0.0122405005 -0.00745103836">
+                                      <body name="pmx_body_081" pos="-0.000646026134 -0.0122405005 -0.00745103836">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_081" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_082" pos="0.0149762523 -0.0699461269 -0.0382914639">
+                                <body name="pmx_body_082" pos="-0.0149762523 -0.0699461269 -0.0382914639">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_082" type="ball" />
-                                  <body name="pmx_body_083" pos="0.000160843134 -0.0295374584 -0.0173670197">
+                                  <body name="pmx_body_083" pos="-0.000160843134 -0.0295374584 -0.0173670197">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_083" type="ball" />
-                                    <body name="pmx_body_084" pos="-0.000185005069 -0.0172322369 -0.0117283726">
+                                    <body name="pmx_body_084" pos="+0.000185005069 -0.0172322369 -0.0117283726">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_084" type="ball" />
-                                      <body name="pmx_body_085" pos="0.000102551579 -0.0162489033 -0.00969875336">
+                                      <body name="pmx_body_085" pos="-0.000102551579 -0.0162489033 -0.00969875336">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_085" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_086" pos="-0.00396534026 -0.0717779779 -0.0369860935">
+                                <body name="pmx_body_086" pos="+0.00396534026 -0.0717779779 -0.0369860935">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_086" type="ball" />
-                                  <body name="pmx_body_087" pos="-0.000164708793 -0.0336335802 -0.0209474754">
+                                  <body name="pmx_body_087" pos="+0.000164708793 -0.0336335802 -0.0209474754">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_087" type="ball" />
-                                    <body name="pmx_body_088" pos="-0.000400401354 -0.0161735344 -0.010956192">
+                                    <body name="pmx_body_088" pos="+0.000400401354 -0.0161735344 -0.010956192">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_088" type="ball" />
-                                      <body name="pmx_body_089" pos="-0.000955919325 -0.0173049355 -0.010223732">
+                                      <body name="pmx_body_089" pos="+0.000955919325 -0.0173049355 -0.010223732">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_089" type="ball" />
                                       </body>
                                     </body>
                                   </body>
                                 </body>
-                                <body name="pmx_body_090" pos="-0.0227914888 -0.0699921227 -0.0381907272">
+                                <body name="pmx_body_090" pos="+0.0227914888 -0.0699921227 -0.0381907272">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_090" type="ball" />
-                                  <body name="pmx_body_091" pos="-0.00226128131 -0.0269000816 -0.0154690456">
+                                  <body name="pmx_body_091" pos="+0.00226128131 -0.0269000816 -0.0154690456">
                                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                     <joint name="pmx_joint_091" type="ball" />
-                                    <body name="pmx_body_092" pos="-0.00131228805 -0.0166710091 -0.0104330826">
+                                    <body name="pmx_body_092" pos="+0.00131228805 -0.0166710091 -0.0104330826">
                                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                       <joint name="pmx_joint_092" type="ball" />
-                                      <body name="pmx_body_093" pos="-0.00139216304 -0.0178787804 -0.0107798195">
+                                      <body name="pmx_body_093" pos="+0.00139216304 -0.0178787804 -0.0107798195">
                                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                         <joint name="pmx_joint_093" type="ball" />
                                       </body>
@@ -594,20 +594,20 @@
                                   </body>
                                 </body>
                               </body>
-                              <body name="pmx_body_069" pos="-0.0033674711 -0.0506861734 -0.0392560387">
+                              <body name="pmx_body_069" pos="+0.0033674711 -0.0506861734 -0.0392560387">
                                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                 <joint name="pmx_joint_069" type="ball" />
-                                <body name="pmx_body_070" pos="-0.0025836122 -0.0447784948 -0.0328530884">
+                                <body name="pmx_body_070" pos="+0.0025836122 -0.0447784948 -0.0328530884">
                                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                                   <joint name="pmx_joint_070" type="ball" />
                                 </body>
                               </body>
                             </body>
                           </body>
-                          <body name="pmx_body_064" pos="-0.00842210948 -0.0722956467 -0.0603810215">
+                          <body name="pmx_body_064" pos="+0.00842210948 -0.0722956467 -0.0603810215">
                             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                             <joint name="pmx_joint_064" type="ball" />
-                            <body name="pmx_body_065" pos="0.00753971696 -0.0598345304 -0.0388663769">
+                            <body name="pmx_body_065" pos="-0.00753971696 -0.0598345304 -0.0388663769">
                               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                               <joint name="pmx_joint_065" type="ball" />
                             </body>
@@ -615,10 +615,10 @@
                         </body>
                       </body>
                     </body>
-                    <body name="pmx_body_059" pos="0.00833450735 -0.0736592168 -0.0281687355">
+                    <body name="pmx_body_059" pos="-0.00833450735 -0.0736592168 -0.0281687355">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_059" type="ball" />
-                      <body name="pmx_body_060" pos="0.000150687695 -0.0208431923 -0.010724678">
+                      <body name="pmx_body_060" pos="-0.000150687695 -0.0208431923 -0.010724678">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_060" type="ball" />
                       </body>
@@ -627,38 +627,38 @@
                 </body>
               </body>
             </body>
-            <body name="pmx_body_013" pos="-0.0415526783 0 0.0574635983">
+            <body name="pmx_body_013" pos="+0.0415526783 0 0.0574635983">
               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
               <joint name="pmx_joint_013" type="ball" />
-              <body name="pmx_body_099" pos="0.00149223208 -0.100931382 -0.0997056866">
+              <body name="pmx_body_099" pos="-0.00149223208 -0.100931382 -0.0997056866">
                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                 <joint name="pmx_joint_099" type="ball" />
-                <body name="pmx_body_100" pos="0 0 0">
+                <body name="pmx_body_100" pos="-0 0 0">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_100" type="ball" />
-                  <body name="pmx_body_101" pos="0.00408064455 0.00633041024 -0.271168857">
+                  <body name="pmx_body_101" pos="-0.00408064455 0.00633041024 -0.271168857">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_101" type="ball" />
-                    <body name="pmx_body_102" pos="0.0546589175 -0.0108125389 -0.26012026">
+                    <body name="pmx_body_102" pos="-0.0546589175 -0.0108125389 -0.26012026">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_102" type="ball" />
-                      <body name="pmx_body_108" pos="-0.126299069 -5.84125519e-08 -0.0128000677">
+                      <body name="pmx_body_108" pos="+0.126299069 -5.84125519e-08 -0.0128000677">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_108" type="ball" />
                       </body>
                     </body>
                   </body>
                 </body>
-                <body name="pmx_body_110" pos="0 0 0">
+                <body name="pmx_body_110" pos="-0 0 0">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_110" type="ball" />
-                  <body name="pmx_body_111" pos="0.00408064455 0.00633041024 -0.271168857">
+                  <body name="pmx_body_111" pos="-0.00408064455 0.00633041024 -0.271168857">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_111" type="ball" />
-                    <body name="pmx_body_112" pos="0.0546589175 -0.0108125389 -0.26012026">
+                    <body name="pmx_body_112" pos="-0.0546589175 -0.0108125389 -0.26012026">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_112" type="ball" />
-                      <body name="pmx_body_113" pos="-0.0928572905 -5.84125519e-08 -0.00462706268">
+                      <body name="pmx_body_113" pos="+0.0928572905 -5.84125519e-08 -0.00462706268">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_113" type="ball" />
                       </body>
@@ -666,35 +666,35 @@
                   </body>
                 </body>
               </body>
-              <body name="pmx_body_103" pos="0.00149232596 0.100931215 -0.100928478">
+              <body name="pmx_body_103" pos="-0.00149232596 0.100931215 -0.100928478">
                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                 <joint name="pmx_joint_103" type="ball" />
-                <body name="pmx_body_104" pos="0 0 0">
+                <body name="pmx_body_104" pos="-0 0 0">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_104" type="ball" />
-                  <body name="pmx_body_105" pos="0.00475723505 -0.00327664375 -0.269746995">
+                  <body name="pmx_body_105" pos="-0.00475723505 -0.00327664375 -0.269746995">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_105" type="ball" />
-                    <body name="pmx_body_106" pos="0.0539823583 0.00522287488 -0.260319338">
+                    <body name="pmx_body_106" pos="-0.0539823583 0.00522287488 -0.260319338">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_106" type="ball" />
-                      <body name="pmx_body_109" pos="-0.126299061 -5.84125519e-08 -0.0128000635">
+                      <body name="pmx_body_109" pos="+0.126299061 -5.84125519e-08 -0.0128000635">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_109" type="ball" />
                       </body>
                     </body>
                   </body>
                 </body>
-                <body name="pmx_body_114" pos="0 0 0">
+                <body name="pmx_body_114" pos="-0 0 0">
                   <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                   <joint name="pmx_joint_114" type="ball" />
-                  <body name="pmx_body_115" pos="0.00475723505 -0.00327664375 -0.269746995">
+                  <body name="pmx_body_115" pos="-0.00475723505 -0.00327664375 -0.269746995">
                     <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                     <joint name="pmx_joint_115" type="ball" />
-                    <body name="pmx_body_116" pos="0.0539823583 0.00522287488 -0.260319338">
+                    <body name="pmx_body_116" pos="-0.0539823583 0.00522287488 -0.260319338">
                       <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                       <joint name="pmx_joint_116" type="ball" />
-                      <body name="pmx_body_117" pos="-0.0928572863 -5.84125519e-08 -0.00462705851">
+                      <body name="pmx_body_117" pos="+0.0928572863 -5.84125519e-08 -0.00462705851">
                         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                         <joint name="pmx_joint_117" type="ball" />
                       </body>
@@ -702,7 +702,7 @@
                   </body>
                 </body>
               </body>
-              <body name="pmx_body_107" pos="0.0128059277 0 -0.0915118408">
+              <body name="pmx_body_107" pos="-0.0128059277 0 -0.0915118408">
                 <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
                 <joint name="pmx_joint_107" type="ball" />
               </body>
@@ -710,32 +710,32 @@
           </body>
         </body>
       </body>
-      <body name="pmx_body_001" pos="0.0453652573 6.75395131e-08 0.0131983443">
+      <body name="pmx_body_001" pos="-0.0453652573 6.75395131e-08 0.0131983443">
         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
         <joint name="pmx_joint_001" type="ball" />
       </body>
-      <body name="pmx_body_002" pos="0.0453652573 6.75395131e-08 0.0131983443">
+      <body name="pmx_body_002" pos="-0.0453652573 6.75395131e-08 0.0131983443">
         <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
         <joint name="pmx_joint_002" type="ball" />
-        <body name="pmx_body_005" pos="0.0362434614 -0.105413637 0.000634105802">
+        <body name="pmx_body_005" pos="-0.0362434614 -0.105413637 0.000634105802">
           <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
           <joint name="pmx_joint_005" type="ball" />
-          <body name="pmx_body_006" pos="-0.00611410022 5.84125519e-08 0.0226338677">
+          <body name="pmx_body_006" pos="+0.00611410022 5.84125519e-08 0.0226338677">
             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
             <joint name="pmx_joint_006" type="ball" />
-            <body name="pmx_body_007" pos="-0.125425117 -5.84125519e-08 -0.0123328048">
+            <body name="pmx_body_007" pos="+0.125425117 -5.84125519e-08 -0.0123328048">
               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
               <joint name="pmx_joint_007" type="ball" />
             </body>
           </body>
         </body>
-        <body name="pmx_body_008" pos="0.0362435865 0.10287732 0.000634101629">
+        <body name="pmx_body_008" pos="-0.0362435865 0.10287732 0.000634101629">
           <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
           <joint name="pmx_joint_008" type="ball" />
-          <body name="pmx_body_009" pos="-0.00611410022 5.84125519e-08 0.0226338719">
+          <body name="pmx_body_009" pos="+0.00611410022 5.84125519e-08 0.0226338719">
             <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
             <joint name="pmx_joint_009" type="ball" />
-            <body name="pmx_body_010" pos="-0.125425109 -5.84125519e-08 -0.012332809">
+            <body name="pmx_body_010" pos="+0.125425109 -5.84125519e-08 -0.012332809">
               <inertial pos="0 0 0" mass="0.00001" diaginertia="1e-9 1e-9 1e-9" />
               <joint name="pmx_joint_010" type="ball" />
             </body>

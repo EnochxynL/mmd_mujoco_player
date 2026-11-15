@@ -131,8 +131,11 @@ def read_pmx_bones(path: Path) -> list[dict]:
 
 def pmx_to_mjcf(position, scale: float) -> np.ndarray:
     x, y, z = position
-    # MMD (+X left, +Y up, +Z forward) to MuJoCo (+X forward, +Y left, +Z up).
-    return scale * np.asarray([z, x, y], dtype=float)
+    # MMD/PMX is left-handed (+X left, +Y up, +Z behind) while MuJoCo is right-handed
+    # (+X forward, +Y left, +Z up). The basis change therefore carries one reflection:
+    # [x, y, z] -> [-z, x, y]. Dropping the minus sign mirrors the whole rig (the
+    # generated skeleton then faces -X and every rotation ends up handed the wrong way).
+    return scale * np.asarray([-z, x, y], dtype=float)
 
 
 def add_inertial(body: ET.Element, mass: str = "0.00001") -> None:
@@ -204,7 +207,7 @@ def main() -> None:
         "scale": args.scale,
         "joint_count": len(bones),
         "hinge_count_converted_to_ball": converted,
-        "coordinate_mapping": "MMD [x,y,z] -> MuJoCo [z,x,y] * scale",
+        "coordinate_mapping": "MMD [x,y,z] -> MuJoCo [-z,x,y] * scale (left-handed to right-handed)",
         "bones": name_map,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {args.output}: {converted} G1 hinge joints -> ball joints; {len(bones)} PMX shadow joints")

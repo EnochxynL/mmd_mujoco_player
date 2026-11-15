@@ -14,12 +14,26 @@ ROBOTS = {
         "fps": 30.0,
         "source_translation_scale": 0.07,
         # angle = straight_q + sign * source flexion (radians).
-        # G1 elbows point the forearm forward at q=0; straight is about +pi/2.
+        # straight_q is measured on the model, not guessed: sweeping the ball joint about
+        # local Y and looking for the collinear upper/fore arm (and thigh/shin) gives
+        # 73 deg for the elbows and 14 deg for the knees. The old 90 deg / 0 deg guesses
+        # left a constant 17 deg / 14 deg forearm and shin error.
         "flexion": {
-            "left_elbow_joint": {"bones": ("左腕", "左ひじ", "左手首"), "axis": (0, 1, 0), "straight_q": 1.5707963267948966, "sign": -1, "range": (-1.0472, 1.5707963267948966)},
-            "right_elbow_joint": {"bones": ("右腕", "右ひじ", "右手首"), "axis": (0, 1, 0), "straight_q": 1.5707963267948966, "sign": -1, "range": (-1.0472, 1.5707963267948966)},
-            "left_knee_joint": {"bones": ("左足", "左ひざ", "左足首"), "axis": (0, 1, 0), "straight_q": 0.0, "sign": 1, "range": (0.0, 2.8798)},
-            "right_knee_joint": {"bones": ("右足", "右ひざ", "右足首"), "axis": (0, 1, 0), "straight_q": 0.0, "sign": 1, "range": (0.0, 2.8798)},
+            "left_elbow_joint": {"bones": ("左腕", "左ひじ", "左手首"), "axis": (0, 1, 0), "straight_q": 1.2740903539558606, "sign": -1, "range": (-1.0472, 1.5707963267948966)},
+            "right_elbow_joint": {"bones": ("右腕", "右ひじ", "右手首"), "axis": (0, 1, 0), "straight_q": 1.2740903539558606, "sign": -1, "range": (-1.0472, 1.5707963267948966)},
+            "left_knee_joint": {"bones": ("左足", "左ひざ", "左足首"), "axis": (0, 1, 0), "straight_q": 0.24434609527920614, "sign": 1, "range": (0.0, 2.8798)},
+            "right_knee_joint": {"bones": ("右足", "右ひざ", "右足首"), "axis": (0, 1, 0), "straight_q": 0.24434609527920614, "sign": 1, "range": (0.0, 2.8798)},
+        },
+        # Rest-pose alignment: the PMX rest pose and the G1 zero pose do not point a limb
+        # the same way (PMX arms rest in an A-pose, G1 arms hang down). For each entry the
+        # player rotates the G1 rest segment (joint body -> g1_child) onto the PMX rest
+        # segment (pmx[0] -> pmx[1]) before applying the VMD delta, so both rigs start
+        # from the same neutral instead of the G1 inheriting a ~45 deg arm offset.
+        "segment_align": {
+            "left_shoulder_yaw_joint": {"pmx": ("左腕", "左ひじ"), "g1_child": "left_elbow_link"},
+            "right_shoulder_yaw_joint": {"pmx": ("右腕", "右ひじ"), "g1_child": "right_elbow_link"},
+            "left_hip_pitch_joint": {"pmx": ("左足", "左ひざ"), "g1_child": "left_knee_link"},
+            "right_hip_pitch_joint": {"pmx": ("右足", "右ひざ"), "g1_child": "right_knee_link"},
         },
         "target_joint_map": {
             "腰": "waist_yaw_joint",
