@@ -1,0 +1,741 @@
+{
+  "source": "01-DEV12-FixBone.pmx",
+  "scale": 0.07,
+  "joint_count": 122,
+  "hinge_count_converted_to_ball": 29,
+  "coordinate_mapping": "MMD [x,y,z] -> MuJoCo [z,x,y] * scale",
+  "bones": [
+    {
+      "name": "センター",
+      "index": 0,
+      "joint": "pmx_joint_000",
+      "parent": -1
+    },
+    {
+      "name": "グルーブ",
+      "index": 3,
+      "joint": "pmx_joint_003",
+      "parent": 0
+    },
+    {
+      "name": "腰",
+      "index": 4,
+      "joint": "pmx_joint_004",
+      "parent": 3
+    },
+    {
+      "name": "上半身",
+      "index": 11,
+      "joint": "pmx_joint_011",
+      "parent": 4
+    },
+    {
+      "name": "上半身2",
+      "index": 12,
+      "joint": "pmx_joint_012",
+      "parent": 11
+    },
+    {
+      "name": "首",
+      "index": 14,
+      "joint": "pmx_joint_014",
+      "parent": 12
+    },
+    {
+      "name": "頭",
+      "index": 15,
+      "joint": "pmx_joint_015",
+      "parent": 14
+    },
+    {
+      "name": "右目",
+      "index": 94,
+      "joint": "pmx_joint_094",
+      "parent": 15
+    },
+    {
+      "name": "右目戻",
+      "index": 95,
+      "joint": "pmx_joint_095",
+      "parent": 94
+    },
+    {
+      "name": "左目",
+      "index": 96,
+      "joint": "pmx_joint_096",
+      "parent": 15
+    },
+    {
+      "name": "左目戻",
+      "index": 97,
+      "joint": "pmx_joint_097",
+      "parent": 96
+    },
+    {
+      "name": "両目",
+      "index": 98,
+      "joint": "pmx_joint_098",
+      "parent": 15
+    },
+    {
+      "name": "メガネ",
+      "index": 118,
+      "joint": "pmx_joint_118",
+      "parent": 15
+    },
+    {
+      "name": "舌１",
+      "index": 119,
+      "joint": "pmx_joint_119",
+      "parent": 15
+    },
+    {
+      "name": "舌２",
+      "index": 120,
+      "joint": "pmx_joint_120",
+      "parent": 119
+    },
+    {
+      "name": "舌３",
+      "index": 121,
+      "joint": "pmx_joint_121",
+      "parent": 120
+    },
+    {
+      "name": "左肩P",
+      "index": 16,
+      "joint": "pmx_joint_016",
+      "parent": 12
+    },
+    {
+      "name": "左肩",
+      "index": 17,
+      "joint": "pmx_joint_017",
+      "parent": 16
+    },
+    {
+      "name": "左肩C",
+      "index": 18,
+      "joint": "pmx_joint_018",
+      "parent": 17
+    },
+    {
+      "name": "左腕",
+      "index": 19,
+      "joint": "pmx_joint_019",
+      "parent": 18
+    },
+    {
+      "name": "左腕捩",
+      "index": 22,
+      "joint": "pmx_joint_022",
+      "parent": 19
+    },
+    {
+      "name": "左ひじ",
+      "index": 23,
+      "joint": "pmx_joint_023",
+      "parent": 22
+    },
+    {
+      "name": "左ひじIK",
+      "index": 24,
+      "joint": "pmx_joint_024",
+      "parent": 23
+    },
+    {
+      "name": "左手捩",
+      "index": 27,
+      "joint": "pmx_joint_027",
+      "parent": 23
+    },
+    {
+      "name": "左手首",
+      "index": 28,
+      "joint": "pmx_joint_028",
+      "parent": 27
+    },
+    {
+      "name": "左手首IK",
+      "index": 29,
+      "joint": "pmx_joint_029",
+      "parent": 28
+    },
+    {
+      "name": "左手先",
+      "index": 32,
+      "joint": "pmx_joint_032",
+      "parent": 28
+    },
+    {
+      "name": "左手先IK",
+      "index": 33,
+      "joint": "pmx_joint_033",
+      "parent": 32
+    },
+    {
+      "name": "左ダミー",
+      "index": 34,
+      "joint": "pmx_joint_034",
+      "parent": 28
+    },
+    {
+      "name": "左親指０",
+      "index": 35,
+      "joint": "pmx_joint_035",
+      "parent": 28
+    },
+    {
+      "name": "左親指１",
+      "index": 36,
+      "joint": "pmx_joint_036",
+      "parent": 35
+    },
+    {
+      "name": "左親指２",
+      "index": 37,
+      "joint": "pmx_joint_037",
+      "parent": 36
+    },
+    {
+      "name": "左親指先",
+      "index": 38,
+      "joint": "pmx_joint_038",
+      "parent": 37
+    },
+    {
+      "name": "左小指１",
+      "index": 39,
+      "joint": "pmx_joint_039",
+      "parent": 28
+    },
+    {
+      "name": "左小指２",
+      "index": 40,
+      "joint": "pmx_joint_040",
+      "parent": 39
+    },
+    {
+      "name": "左小指３",
+      "index": 41,
+      "joint": "pmx_joint_041",
+      "parent": 40
+    },
+    {
+      "name": "左小指先",
+      "index": 42,
+      "joint": "pmx_joint_042",
+      "parent": 41
+    },
+    {
+      "name": "左薬指１",
+      "index": 43,
+      "joint": "pmx_joint_043",
+      "parent": 28
+    },
+    {
+      "name": "左薬指２",
+      "index": 44,
+      "joint": "pmx_joint_044",
+      "parent": 43
+    },
+    {
+      "name": "左薬指３",
+      "index": 45,
+      "joint": "pmx_joint_045",
+      "parent": 44
+    },
+    {
+      "name": "左薬指先",
+      "index": 46,
+      "joint": "pmx_joint_046",
+      "parent": 45
+    },
+    {
+      "name": "左中指１",
+      "index": 47,
+      "joint": "pmx_joint_047",
+      "parent": 28
+    },
+    {
+      "name": "左中指２",
+      "index": 48,
+      "joint": "pmx_joint_048",
+      "parent": 47
+    },
+    {
+      "name": "左中指３",
+      "index": 49,
+      "joint": "pmx_joint_049",
+      "parent": 48
+    },
+    {
+      "name": "左中指先",
+      "index": 50,
+      "joint": "pmx_joint_050",
+      "parent": 49
+    },
+    {
+      "name": "左人指１",
+      "index": 51,
+      "joint": "pmx_joint_051",
+      "parent": 28
+    },
+    {
+      "name": "左人指２",
+      "index": 52,
+      "joint": "pmx_joint_052",
+      "parent": 51
+    },
+    {
+      "name": "左人指３",
+      "index": 53,
+      "joint": "pmx_joint_053",
+      "parent": 52
+    },
+    {
+      "name": "左人指先",
+      "index": 54,
+      "joint": "pmx_joint_054",
+      "parent": 53
+    },
+    {
+      "name": "左手首S",
+      "index": 30,
+      "joint": "pmx_joint_030",
+      "parent": 27
+    },
+    {
+      "name": "左手首S先",
+      "index": 31,
+      "joint": "pmx_joint_031",
+      "parent": 30
+    },
+    {
+      "name": "左ひじS",
+      "index": 25,
+      "joint": "pmx_joint_025",
+      "parent": 22
+    },
+    {
+      "name": "左ひじS先",
+      "index": 26,
+      "joint": "pmx_joint_026",
+      "parent": 25
+    },
+    {
+      "name": "左腕S",
+      "index": 20,
+      "joint": "pmx_joint_020",
+      "parent": 17
+    },
+    {
+      "name": "左腕S先",
+      "index": 21,
+      "joint": "pmx_joint_021",
+      "parent": 20
+    },
+    {
+      "name": "右肩P",
+      "index": 55,
+      "joint": "pmx_joint_055",
+      "parent": 12
+    },
+    {
+      "name": "右肩",
+      "index": 56,
+      "joint": "pmx_joint_056",
+      "parent": 55
+    },
+    {
+      "name": "右肩C",
+      "index": 57,
+      "joint": "pmx_joint_057",
+      "parent": 56
+    },
+    {
+      "name": "右腕",
+      "index": 58,
+      "joint": "pmx_joint_058",
+      "parent": 57
+    },
+    {
+      "name": "右腕捩",
+      "index": 61,
+      "joint": "pmx_joint_061",
+      "parent": 58
+    },
+    {
+      "name": "右ひじ",
+      "index": 62,
+      "joint": "pmx_joint_062",
+      "parent": 61
+    },
+    {
+      "name": "右ひじIK",
+      "index": 63,
+      "joint": "pmx_joint_063",
+      "parent": 62
+    },
+    {
+      "name": "右手捩",
+      "index": 66,
+      "joint": "pmx_joint_066",
+      "parent": 62
+    },
+    {
+      "name": "右手首",
+      "index": 67,
+      "joint": "pmx_joint_067",
+      "parent": 66
+    },
+    {
+      "name": "右手首IK",
+      "index": 68,
+      "joint": "pmx_joint_068",
+      "parent": 67
+    },
+    {
+      "name": "右手先",
+      "index": 71,
+      "joint": "pmx_joint_071",
+      "parent": 67
+    },
+    {
+      "name": "右手先IK",
+      "index": 72,
+      "joint": "pmx_joint_072",
+      "parent": 71
+    },
+    {
+      "name": "右ダミー",
+      "index": 73,
+      "joint": "pmx_joint_073",
+      "parent": 67
+    },
+    {
+      "name": "右親指０",
+      "index": 74,
+      "joint": "pmx_joint_074",
+      "parent": 67
+    },
+    {
+      "name": "右親指１",
+      "index": 75,
+      "joint": "pmx_joint_075",
+      "parent": 74
+    },
+    {
+      "name": "右親指２",
+      "index": 76,
+      "joint": "pmx_joint_076",
+      "parent": 75
+    },
+    {
+      "name": "右親指先",
+      "index": 77,
+      "joint": "pmx_joint_077",
+      "parent": 76
+    },
+    {
+      "name": "右小指１",
+      "index": 78,
+      "joint": "pmx_joint_078",
+      "parent": 67
+    },
+    {
+      "name": "右小指２",
+      "index": 79,
+      "joint": "pmx_joint_079",
+      "parent": 78
+    },
+    {
+      "name": "右小指３",
+      "index": 80,
+      "joint": "pmx_joint_080",
+      "parent": 79
+    },
+    {
+      "name": "右小指先",
+      "index": 81,
+      "joint": "pmx_joint_081",
+      "parent": 80
+    },
+    {
+      "name": "右薬指１",
+      "index": 82,
+      "joint": "pmx_joint_082",
+      "parent": 67
+    },
+    {
+      "name": "右薬指２",
+      "index": 83,
+      "joint": "pmx_joint_083",
+      "parent": 82
+    },
+    {
+      "name": "右薬指３",
+      "index": 84,
+      "joint": "pmx_joint_084",
+      "parent": 83
+    },
+    {
+      "name": "右薬指先",
+      "index": 85,
+      "joint": "pmx_joint_085",
+      "parent": 84
+    },
+    {
+      "name": "右中指１",
+      "index": 86,
+      "joint": "pmx_joint_086",
+      "parent": 67
+    },
+    {
+      "name": "右中指２",
+      "index": 87,
+      "joint": "pmx_joint_087",
+      "parent": 86
+    },
+    {
+      "name": "右中指３",
+      "index": 88,
+      "joint": "pmx_joint_088",
+      "parent": 87
+    },
+    {
+      "name": "右中指先",
+      "index": 89,
+      "joint": "pmx_joint_089",
+      "parent": 88
+    },
+    {
+      "name": "右人指１",
+      "index": 90,
+      "joint": "pmx_joint_090",
+      "parent": 67
+    },
+    {
+      "name": "右人指２",
+      "index": 91,
+      "joint": "pmx_joint_091",
+      "parent": 90
+    },
+    {
+      "name": "右人指３",
+      "index": 92,
+      "joint": "pmx_joint_092",
+      "parent": 91
+    },
+    {
+      "name": "右人指先",
+      "index": 93,
+      "joint": "pmx_joint_093",
+      "parent": 92
+    },
+    {
+      "name": "右手首S",
+      "index": 69,
+      "joint": "pmx_joint_069",
+      "parent": 66
+    },
+    {
+      "name": "右手首S先",
+      "index": 70,
+      "joint": "pmx_joint_070",
+      "parent": 69
+    },
+    {
+      "name": "右ひじS",
+      "index": 64,
+      "joint": "pmx_joint_064",
+      "parent": 61
+    },
+    {
+      "name": "右ひじS先",
+      "index": 65,
+      "joint": "pmx_joint_065",
+      "parent": 64
+    },
+    {
+      "name": "右腕S",
+      "index": 59,
+      "joint": "pmx_joint_059",
+      "parent": 56
+    },
+    {
+      "name": "右腕S先",
+      "index": 60,
+      "joint": "pmx_joint_060",
+      "parent": 59
+    },
+    {
+      "name": "下半身",
+      "index": 13,
+      "joint": "pmx_joint_013",
+      "parent": 4
+    },
+    {
+      "name": "腰キャンセル右",
+      "index": 99,
+      "joint": "pmx_joint_099",
+      "parent": 13
+    },
+    {
+      "name": "右足",
+      "index": 100,
+      "joint": "pmx_joint_100",
+      "parent": 99
+    },
+    {
+      "name": "右ひざ",
+      "index": 101,
+      "joint": "pmx_joint_101",
+      "parent": 100
+    },
+    {
+      "name": "右足首",
+      "index": 102,
+      "joint": "pmx_joint_102",
+      "parent": 101
+    },
+    {
+      "name": "右つま先",
+      "index": 108,
+      "joint": "pmx_joint_108",
+      "parent": 102
+    },
+    {
+      "name": "右足D",
+      "index": 110,
+      "joint": "pmx_joint_110",
+      "parent": 99
+    },
+    {
+      "name": "右ひざD",
+      "index": 111,
+      "joint": "pmx_joint_111",
+      "parent": 110
+    },
+    {
+      "name": "右足首D",
+      "index": 112,
+      "joint": "pmx_joint_112",
+      "parent": 111
+    },
+    {
+      "name": "右足先EX",
+      "index": 113,
+      "joint": "pmx_joint_113",
+      "parent": 112
+    },
+    {
+      "name": "腰キャンセル左",
+      "index": 103,
+      "joint": "pmx_joint_103",
+      "parent": 13
+    },
+    {
+      "name": "左足",
+      "index": 104,
+      "joint": "pmx_joint_104",
+      "parent": 103
+    },
+    {
+      "name": "左ひざ",
+      "index": 105,
+      "joint": "pmx_joint_105",
+      "parent": 104
+    },
+    {
+      "name": "左足首",
+      "index": 106,
+      "joint": "pmx_joint_106",
+      "parent": 105
+    },
+    {
+      "name": "左つま先",
+      "index": 109,
+      "joint": "pmx_joint_109",
+      "parent": 106
+    },
+    {
+      "name": "左足D",
+      "index": 114,
+      "joint": "pmx_joint_114",
+      "parent": 103
+    },
+    {
+      "name": "左ひざD",
+      "index": 115,
+      "joint": "pmx_joint_115",
+      "parent": 114
+    },
+    {
+      "name": "左足首D",
+      "index": 116,
+      "joint": "pmx_joint_116",
+      "parent": 115
+    },
+    {
+      "name": "左足先EX",
+      "index": 117,
+      "joint": "pmx_joint_117",
+      "parent": 116
+    },
+    {
+      "name": "腰パーツ親",
+      "index": 107,
+      "joint": "pmx_joint_107",
+      "parent": 13
+    },
+    {
+      "name": "操作中心",
+      "index": 1,
+      "joint": "pmx_joint_001",
+      "parent": -1
+    },
+    {
+      "name": "全ての親",
+      "index": 2,
+      "joint": "pmx_joint_002",
+      "parent": -1
+    },
+    {
+      "name": "右足IK親",
+      "index": 5,
+      "joint": "pmx_joint_005",
+      "parent": 2
+    },
+    {
+      "name": "右足ＩＫ",
+      "index": 6,
+      "joint": "pmx_joint_006",
+      "parent": 5
+    },
+    {
+      "name": "右つま先ＩＫ",
+      "index": 7,
+      "joint": "pmx_joint_007",
+      "parent": 6
+    },
+    {
+      "name": "左足IK親",
+      "index": 8,
+      "joint": "pmx_joint_008",
+      "parent": 2
+    },
+    {
+      "name": "左足ＩＫ",
+      "index": 9,
+      "joint": "pmx_joint_009",
+      "parent": 8
+    },
+    {
+      "name": "左つま先ＩＫ",
+      "index": 10,
+      "joint": "pmx_joint_010",
+      "parent": 9
+    }
+  ]
+}

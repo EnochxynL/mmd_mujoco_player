@@ -1,0 +1,20 @@
+[project]
+name = "mmd-mujoco-player"
+version = "0.1.0"
+description = "Convert PMX skeletons to MJCF and FK-play VMD motions in MuJoCo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mujoco>=3.1",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+mmd-player = "mmd_robot_player.player:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mmd_robot_player"]
