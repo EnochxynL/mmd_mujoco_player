@@ -1,4 +1,4 @@
-收到，就停在这里，代码保持现在的状态（已改完并验证过，未再改动）。
+# 收到，就停在这里，代码保持现在的状态（已改完并验证过，未再改动）。
 
 ## 结论：不是"左右臂参数写反"，而是四个叠在一起的坐标/绑骨缺陷
 
@@ -45,3 +45,38 @@
 - 肘/腕是 1 自由度近似：`apply_flexion` 只用源骨架的弯曲**幅值**，弯曲平面由 `axis` 固定，所以前臂仍有 ≤17° 残差。
 - PMX 的 IK、付与親（肩C/腕捩在这一版里旋转恰好为 0，所以大臂能对到 0°）、非根位移仍未实现；`左腕捩→wrist_roll` 的语义映射仍是权宜。
 - README 的「当前边界 / 坐标映射」段还写着旧映射（`MMD [x,y,z] -> MuJoCo [z,x,y]`），要改的话你说一声，我不动它。
+
+# 已按右边（融合后）为准提交。
+
+```
+0b8f4fd  Keep the G1 humerus rigid instead of tearing it across three links
+a539a5b  doc
+e0985c8  Fix MMD->MuJoCo handedness, rest-pose offset and missing root rotation
+```
+
+工作区干净，8 tests OK。
+
+## 问题定位
+
+G1 的肱骨分在 `shoulder_pitch → shoulder_roll → shoulder_yaw` 三个 link 上，MMD 只有一根 `腕`。旧映射把 `腕` 放在 `shoulder_yaw`（下段），再叠加 ~50° 的 rest 对齐（也只落在这一个 ball joint 上），于是**上段两截不动、下段整根转**——就是你看到的断裂。
+
+## 改法
+
+- `robots.py`：`肩P / 肩 / 腕` 三根 PMX 骨全部 compose 到 **`shoulder_pitch_joint`**（链的最上端），`shoulder_roll/yaw` 保持零位 → 整根肱骨刚性旋转；`segment_align` 移到 `shoulder_pitch`，并用新增的 `g1_start` 指定"量哪一段"（量 `shoulder_yaw → elbow` 这根真正的肱骨，而不是从 pitch 量）。
+- `player.py`：`bind_targets` 改成两遍——先按 rest 反解算出"所有 delta = identity"时的实际姿态（probe），再在这个姿态上量段方向求对齐角；否则 pitch 关节自身的 rest 旋转被除掉后，量出来的段并不是模型原始朝向，角度会偏。
+- `tests/test_retarget.py`：新增 `test_humerus_stays_rigid`，三个 link 彼此的相对朝向偏离 rest > 0.5° 就失败。
+
+## 数值
+
+| | 改前（distributed） | 改后（fused） |
+|---|---|---|
+| 肱骨方向 vs PMX | 0.0° | **0.0°**（不变，合成旋转相同） |
+| 三段相对朝向 | pitch→roll 差 ~14°、roll→yaw 差 ~50°+36° | **全 0°（刚性）** |
+| 对齐角 | 49.7°（挂在 yaw 上） | 65.4°（挂在 pitch 上，按其自身 rest 反解后折算） |
+| 0 帧双手 y | +0.209 / −0.213 | +0.24 / −0.24 |
+| 前臂误差 | 3.8°/8.1° | 3.8°/8.1°（不变） |
+
+## 两个要留意的副作用
+
+1. **手的位置整体外移约 3 cm**（y 0.21 → 0.24）。刚性化后肱骨以肩关节为支点整体旋转，三段不再各自微转，肘/手的绝对落点会略有变化——方向仍是 PMX 的精确值。
+2. **`shoulder_roll` / `shoulder_yaw` 现在不参与驱动**（保持零位）。这是视觉播放的取舍：真机那三根 DOF 的分工要靠 mesh 的滑移壳来容纳，而 MMD 的 50° A-pose 补偿压在任一子关节上都会撕网。以后若要做动力学轨迹（需要真实三自由度分配），得换成型面/世界矩阵 retarget，而不是直接复用这份 qpos。
